@@ -1,0 +1,514 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!DOCTYPE package SYSTEM "package2.dtd">
+<package>
+<name>geometry</name>
+<description>Geometry</description>
+<class type="class">
+	<name>Result</name>
+	<description>Result</description>
+	<icon>result.gif</icon>
+<graphics>
+<bounds x="0" y="0" width="110" height="30"/>
+<rect x="0" y="0" width="110" height="30" colour="-4394" filled="true" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<rect x="0" y="0" width="110" height="30" colour="-16777216" filled="false" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+</graphics>
+	<fields>
+       <field name="value" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="10" y="15" fontname="Arial" fontstyle="1" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+	</fields>
+</class>
+<class type="class">
+	<name>Rect</name>
+	<description>Rect</description>
+	<icon>ruut.gif</icon>
+<graphics>
+<bounds x="0" y="0" width="142" height="137"/>
+<rect x="0" y="0" width="138" height="138" colour="-4390956" filled="true" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<rect x="0" y="0" width="138" height="138" colour="-16777216" filled="false" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="0" y1="138" x2="138" y2="0" colour="-16777216" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+</graphics>
+	<ports>
+		<port name="a" type="double" x="62" y="0" portConnection="" strict="false" />
+		<port name="d" type="double" x="68" y="73" portConnection="" strict="false" />
+		<port name="S" type="double" x="45" y="35" portConnection="" strict="false" />
+		<port name="p" type="double" x="97" y="96" portConnection="" strict="false" />
+	</ports>
+	<fields>
+       <field name="a" type="double" value="10">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="145" y="60" fontname="Arial" fontstyle="1" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="d" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="30" y="110" fontname="Arial" fontstyle="1" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="S" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="25" y="20" fontname="Arial" fontstyle="1" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+		<field name="p" type="double"/>
+	</fields>
+</class>
+<class type="class">
+	<name>Circle</name>
+	<description>Circle</description>
+	<icon>ring.gif</icon>
+<graphics>
+<bounds x="0" y="0" width="142" height="137"/>
+<oval x="0" y="0" width="138" height="138" colour="-1" filled="true" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<oval x="0" y="0" width="138" height="138" colour="-16777216" filled="false" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="69" y1="69" x2="117" y2="117" colour="-16777216" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<line x1="0" y1="69" x2="138" y2="69" colour="-16777216" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+</graphics>
+	<ports>
+		<port name="r" type="double" x="97" y="96" portConnection="" strict="false" />
+		<port name="d" type="double" x="62" y="70" portConnection="" strict="false" />
+		<port name="p" type="double" x="113" y="14" portConnection="" strict="false" />
+		<port name="S" type="double" x="69" y="26" portConnection="" strict="false" />
+	</ports>
+	<fields>
+       <field name="r" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="90" y="85" fontname="Arial" fontstyle="1" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="d" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="40" y="60" fontname="Arial" fontstyle="1" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="S" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="45" y="25" fontname="Arial" fontstyle="1" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+		<field name="p" type="double"/>
+	</fields>
+</class>
+<class type="relation">
+	<name>Multiplier</name>
+	<description>can multiply or divide a number</description>
+	<icon>default.gif</icon>
+<graphics>
+<bounds x="0" y="0" width="100" height="31"/>
+<rect x="93" y="132" width="0" height="0" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<rect x="5" y="1" width="91" height="25" colour="-16777216" filled="false" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<rect x="8" y="4" width="87" height="21" colour="-3342388" filled="true" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+</graphics>
+	<ports>
+		<port name="in" type="double" x="5" y="14" portConnection="" strict="false" />
+		<port name="out" type="double" x="95" y="13" portConnection="" strict="false" />
+	</ports>
+	<fields>
+		<field name="in" type="double"/>
+		<field name="out" type="double"/>
+	</fields>
+</class>
+<class type="relation">
+	<name>MultiplierRel</name>
+	<description>can multiply or divide a number</description>
+	<icon>default.gif</icon>
+<graphics>
+<bounds x="0" y="0" width="100" height="31"/>
+<rect x="93" y="132" width="0" height="0" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<line x1="3" y1="2" x2="89" y2="1" colour="-3342388" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="5" y1="2" x2="100" y2="0" colour="-3342388" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<text string="multiplier " colour="-16777216" x="9" y="10" fontname="Abyssinica SIL" fontstyle="0" fontsize="10" transparency="255"/>
+</graphics>
+	<ports>
+		<port name="in" type="double" x="0" y="1" portConnection="" strict="false" />
+		<port name="out" type="double" x="95" y="3" portConnection="" strict="false" />
+	</ports>
+	<fields>
+		<field name="in" type="double"/>
+		<field name="out" type="double"/>
+       <field name="multiplier" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="57" y="11" fontname="Abyssinica SIL" fontstyle="0" fontsize="10" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+	</fields>
+</class>
+<class type="class">
+	<name>RTriangle</name>
+	<description>a triangle with a right angle.</description>
+	<icon>RTriangle.png</icon>
+<graphics>
+<bounds x="0" y="0" width="116" height="218"/>
+<line x1="110" y1="211" x2="110" y2="211" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="111" y1="213" x2="6" y2="2" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<rect x="50" y="212" width="0" height="0" colour="-10066177" filled="true" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<rect x="48" y="106" width="0" height="0" colour="-10066177" filled="true" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="3" y1="77" x2="3" y2="77" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="7" y1="214" x2="5" y2="3" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="7" y1="216" x2="112" y2="216" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<arc x="-20" y="192" width="54" height="42" startAngle="350" arcAngle="96" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<text string="P = *p" colour="-16777216" x="62" y="52" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<arc x="-25" y="12" width="69" height="42" startAngle="265" arcAngle="42" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<arc x="89" y="182" width="38" height="46" startAngle="124" arcAngle="87" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+</graphics>
+	<ports>
+		<port name="b" type="double" x="7" y="138" portConnection="" strict="false" />
+		<port name="c" type="double" x="62" y="113" portConnection="" strict="false" />
+		<port name="alpha" type="double" x="15" y="39" portConnection="" strict="false" />
+		<port name="a" type="double" x="59" y="217" portConnection="" strict="false" />
+		<port name="S" type="double" x="42" y="151" portConnection="" strict="false" />
+		<port name="p" type="double" x="62" y="65" portConnection="" strict="false" />
+		<port name="gamma" type="double" x="18" y="207" portConnection="" strict="false" />
+		<port name="beta" type="double" x="97" y="205" portConnection="" strict="false" />
+	</ports>
+	<fields>
+		<field name="a" type="double"/>
+		<field name="b" type="double"/>
+		<field name="c" type="double"/>
+		<field name="h" type="double"/>
+		<field name="S" type="double"/>
+		<field name="p" type="double"/>
+		<field name="alpha" type="double"/>
+		<field name="beta" type="double"/>
+		<field name="gamma" type="double" value="1.571" />
+	</fields>
+</class>
+<class type="class">
+	<name>Triangle</name>
+	<description>Võrdkülgne kolmnurk</description>
+	<icon>triangle.png</icon>
+<graphics>
+<bounds x="0" y="0" width="223" height="217"/>
+<arc x="-23" y="173" width="102" height="75" startAngle="356" arcAngle="92" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<line x1="217" y1="208" x2="217" y2="208" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="218" y1="210" x2="113" y2="-1" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<rect x="157" y="209" width="0" height="0" colour="-10066177" filled="true" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<rect x="155" y="103" width="0" height="0" colour="-10066177" filled="true" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="110" y1="74" x2="110" y2="74" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="116" y1="212" x2="114" y2="1" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="114" y1="213" x2="219" y2="213" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="9" y1="213" x2="114" y2="213" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<arc x="87" y="189" width="54" height="42" startAngle="350" arcAngle="96" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<line x1="79" y1="67" x2="79" y2="67" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="110" y1="3" x2="110" y2="3" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="113" y1="2" x2="113" y2="2" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="113" y1="0" x2="8" y2="212" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<arc x="70" y="-34" width="80" height="94" startAngle="235" arcAngle="79" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<line x1="114" y1="150" x2="114" y2="150" colour="-16777216" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<line x1="94" y1="154" x2="94" y2="154" colour="-16777216" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<line x1="91" y1="153" x2="91" y2="153" colour="-16777216" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<line x1="115" y1="142" x2="60" y2="113" colour="-16777216" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<line x1="116" y1="143" x2="116" y2="143" colour="-16777216" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<line x1="116" y1="144" x2="9" y2="212" colour="-16777216" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<text string="p = " colour="-16777216" x="170" y="53" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="a = " colour="-16777216" x="104" y="228" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="b = " colour="-16777216" x="28" y="90" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="S = " colour="-16777216" x="139" y="164" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="c = " colour="-16777216" x="179" y="106" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<arc x="170" y="158" width="103" height="79" startAngle="121" arcAngle="84" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<text string="r = " colour="-16777216" x="76" y="113" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="R = " colour="-16777216" x="41" y="163" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="h = " colour="-16777216" x="119" y="129" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+</graphics>
+	<ports>
+		<port name="b" type="double" x="58" y="111" portConnection="" strict="false" />
+		<port name="c" type="double" x="169" y="113" portConnection="" strict="false" />
+		<port name="alpha" type="double" x="110" y="33" portConnection="" strict="false" />
+		<port name="a" type="double" x="115" y="215" portConnection="" strict="false" />
+		<port name="S" type="double" x="149" y="151" portConnection="" strict="false" />
+		<port name="p" type="double" x="170" y="64" portConnection="" strict="false" />
+		<port name="delta" type="double" x="125" y="204" portConnection="" strict="false" />
+		<port name="beta" type="double" x="206" y="202" portConnection="" strict="false" />
+		<port name="gamma" type="double" x="29" y="198" portConnection="" strict="false" />
+		<port name="h" type="double" x="116" y="132" portConnection="" strict="false" />
+		<port name="icr" type="double" x="83" y="124" portConnection="" strict="false" />
+		<port name="ocr" type="double" x="70" y="175" portConnection="" strict="false" />
+	</ports>
+	<fields>
+       <field name="a" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="126" y="229" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="b" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="50" y="92" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="c" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="200" y="106" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="h" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="142" y="130" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="S" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="161" y="164" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="p" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="194" y="53" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="alpha" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="103" y="48" fontname="Abyssinica SIL" fontstyle="0" fontsize="10" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="beta" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="179" y="194" fontname="Abyssinica SIL" fontstyle="0" fontsize="10" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+		<field name="delta" type="double" value="1.570796" />
+       <field name="gamma" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="35" y="207" fontname="Abyssinica SIL" fontstyle="0" fontsize="10" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="ocr" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="63" y="163" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="icr" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="94" y="113" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+	</fields>
+</class>
+<class type="class">
+	<name>Trapezoid</name>
+	<description>Trapets</description>
+	<icon>Trapezoid.png</icon>
+<graphics>
+<bounds x="0" y="0" width="328" height="218"/>
+<line x1="325" y1="210" x2="325" y2="210" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="335" y1="220" x2="335" y2="220" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="326" y1="212" x2="221" y2="1" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="220" y1="215" x2="115" y2="4" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<rect x="265" y="211" width="0" height="0" colour="-10066177" filled="true" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<rect x="275" y="221" width="0" height="0" colour="-10066177" filled="true" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<rect x="263" y="105" width="0" height="0" colour="-10066177" filled="true" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<rect x="273" y="115" width="0" height="0" colour="-10066177" filled="true" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="218" y1="76" x2="218" y2="76" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="228" y1="86" x2="228" y2="86" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="222" y1="213" x2="220" y2="2" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="116" y1="216" x2="114" y2="5" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="222" y1="215" x2="327" y2="215" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="10" y1="215" x2="115" y2="215" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="115" y1="2" x2="220" y2="2" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="117" y1="215" x2="222" y2="215" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<text string="p = " colour="-16777216" x="272" y="23" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<line x1="12" y1="215" x2="12" y2="215" colour="-16777216" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<line x1="9" y1="215" x2="114" y2="4" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="34" y1="-37" x2="34" y2="-37" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<text string="a = " colour="-16777216" x="145" y="-9" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="c = " colour="-16777216" x="273" y="94" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="c = " colour="-16777216" x="17" y="102" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="b = " colour="-16777216" x="152" y="234" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="x = " colour="-16777216" x="38" y="230" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="x = " colour="-16777216" x="260" y="234" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="h = " colour="-16777216" x="123" y="116" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="h = " colour="-16777216" x="211" y="129" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="S = " colour="-16777216" x="164" y="66" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<arc x="-43" y="167" width="130" height="95" startAngle="357" arcAngle="85" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<arc x="267" y="165" width="103" height="72" startAngle="111" arcAngle="89" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<arc x="193" y="181" width="68" height="52" startAngle="345" arcAngle="115" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+<arc x="81" y="174" width="64" height="58" startAngle="83" arcAngle="129" colour="-16777216" filled="false" fixed="false" stroke="1" linetype="0.0" transparency="255"/>
+</graphics>
+	<ports>
+		<port name="b" type="double" x="172" y="214" portConnection="" strict="false" />
+		<port name="c" type="double" x="274" y="110" portConnection="" strict="false" />
+		<port name="S" type="double" x="172" y="78" portConnection="" strict="false" />
+		<port name="p" type="double" x="275" y="35" portConnection="" strict="false" />
+		<port name="gamma" type="double" x="233" y="206" portConnection="" strict="false" />
+		<port name="beta" type="double" x="304" y="207" portConnection="" strict="false" />
+		<port name="h" type="double" x="117" y="104" portConnection="" strict="false" />
+		<port name="h" type="double" x="220" y="109" portConnection="" strict="false" />
+		<port name="a" type="double" x="164" y="2" portConnection="" strict="false" />
+		<port name="c" type="double" x="60" y="115" portConnection="" strict="false" />
+		<port name="x" type="double" x="52" y="215" portConnection="" strict="false" />
+		<port name="x" type="double" x="270" y="215" portConnection="" strict="false" />
+		<port name="beta" type="double" x="37" y="203" portConnection="" strict="false" />
+		<port name="gamma" type="double" x="104" y="203" portConnection="" strict="false" />
+	</ports>
+	<fields>
+       <field name="a" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="168" y="-8" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="b" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="176" y="234" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="c" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="296" y="94" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+            <text string="*self" colour="-16777216" x="40" y="104" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="h" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="147" y="117" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+            <text string="*self" colour="-16777216" x="233" y="130" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="S" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="188" y="68" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="p" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="295" y="23" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+		<field name="alpha" type="double"/>
+       <field name="beta" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="37" y="196" fontname="Abyssinica SIL" fontstyle="0" fontsize="10" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="gamma" type="double" value="1.571">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="223" y="198" fontname="Abyssinica SIL" fontstyle="0" fontsize="10" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+		<field name="d" type="double"/>
+       <field name="x" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="59" y="230" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+            <text string="*self" colour="-16777216" x="282" y="236" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+	</fields>
+</class>
+<class type="class">
+	<name>Rectangle</name>
+	<description>Ristkülik</description>
+	<icon>Rectangle.png</icon>
+<graphics>
+<bounds x="0" y="0" width="189" height="73"/>
+<rect x="4" y="7" width="180" height="61" colour="-16777216" filled="false" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="6" y1="68" x2="183" y2="8" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<line x1="94" y1="39" x2="94" y2="39" colour="-16777216" fixed="false" stroke="2" linetype="0.0" transparency="255"/>
+<text string="a = " colour="-16777216" x="65" y="-2" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="b =" colour="-16777216" x="-37" y="28" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="d = " colour="-16777216" x="101" y="44" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="p = " colour="-16777216" x="193" y="32" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+<text string="S = " colour="-16777216" x="20" y="37" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+</graphics>
+	<ports>
+		<port name="a" type="double" x="91" y="7" portConnection="" strict="false" />
+		<port name="b" type="double" x="4" y="33" portConnection="" strict="false" />
+		<port name="d" type="double" x="93" y="39" portConnection="" strict="false" />
+		<port name="S" type="double" x="32" y="22" portConnection="" strict="false" />
+		<port name="p" type="double" x="208" y="17" portConnection="" strict="false" />
+	</ports>
+	<fields>
+       <field name="a" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="88" y="-1" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="b" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="-15" y="29" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="d" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="123" y="45" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="S" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="42" y="39" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+       <field name="p" type="double">
+        <known>
+          <graphics>
+            <text string="*self" colour="-16777216" x="217" y="33" fontname="Abyssinica SIL" fontstyle="0" fontsize="12" transparency="255"/>
+          </graphics>
+        </known>
+      </field>
+	</fields>
+</class>
+</package>
