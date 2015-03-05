@@ -741,10 +741,11 @@
        <field name="in1" type="double">
         <known>
           <graphics>
-            <text string="*self" colour="-16777216" x="10" y="45" fontname="Abyssinica SIL" fontstyle="0" fontsize="20" transparency="255"/>
+            <text string="*self" colour="-16777216" x="-29" y="39" fontname="Abyssinica SIL" fontstyle="0" fontsize="13" transparency="255"/>
           </graphics>
         </known>
       </field>
+            <text string="*self" colour="-16777216" x="10" y="45" fontname="Abyssinica SIL" fontstyle="0" fontsize="20" transparency="255"/>
 	</fields>
 </class>
 </package>
