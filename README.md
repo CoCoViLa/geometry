@@ -3,4 +3,4 @@ This is a simple geometry package including circle, square, rectangle, triangle 
 
 This package is easy enough to test and get the basic idea what the CoCoViLa program is and how it works.
 The ports on shapes can be connected with a binding relation or simply by placing two ports on top of one another.
-There is also the operator to give out result from the program. It is intended to have an input value, which comes from the scheme, and is marked as output.
+There is also the operator to give out the result of the scheme. It is intended to have an input value, which comes from the scheme, and is marked as output.
