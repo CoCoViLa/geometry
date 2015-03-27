@@ -1,7 +1,7 @@
 class Circle {
 	/*@ specification Circle {
-			double r, d, S, p, pi;
-			pi = 3.14;
+			double r, d, S, p;
+			const double pi = Math.PI;
 			S = pi * r ^ 2;
 			p = pi * d;
 			d = 2 * r;
