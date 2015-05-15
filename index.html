@@ -22,7 +22,7 @@
 <div class="container-fluid">
   <div class="panel panel-default">
     <div class="panel-body">
-      <h1>Mealy Machine</h1>
+      <h1>Geometry</h1>
     </div>
   </div>
   <div class="row">
@@ -47,21 +47,13 @@
       <div id="content">
         <div class="panel panel-default">
           <div class="panel-body">
-<p>A CoCoViLa package that enable Mealy machine construction via state diagrams drawing. 
-The package is meant to be used together with CoCoViLa (Dynamic or Discrete) 
-System Simulator packages.</p>
+<p>A CoCoVila package, that solves basic geometric problems.</p>
 
-<img src="img/flying-mealy-diagram.png" alt="flying-mealy-diagram" class="center-block">
+<img src="img/geo_scheme1.png" alt="flying-mealy-diagram" class="center-block">
               
-<p>A state diagram is composed of an Initial State and one or more States. It may have an End State. 
-The States are to be connected with Transitions. Transitions are labeled with conditional 
-expressions, actions and order. Based on the conditional expressions it is decided which of the 
-Transitions exiting the current State is used on execution. If there are several 
-Transitions that are usable (their conditional expressions evaluate to true) the one, 
-having least order value, is used. The action is executed when the Transition is used.
-You can find more information on Mealy machine 
-<a href="http://en.wikipedia.org/wiki/Mealy_machine">here</a>.
+<p>The package allows solving problems that consist of basic geometric shapes such as a circle, a triangle a trapezoid or a rectangle. It is a good introductory package for someone who has never used CoCoViLa before. The geometry used is easy enough to understand quickly and the shapes are fun to play with.</br>Above we have created a problem, in which the base of a triangle has an equal length with a side of a square and the height of a triangle on that base is equal to the radius of the circle. The areas of square and triangle are also equal. We wish to calculate the diameter of the circle. Below is the result that CoCoViLa produces.
 </p>
+<img src="img/geo_scheme2.png" alt="flying-mealy-diagram" class="center-block">
 
           </div>
         </div>
