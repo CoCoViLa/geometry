@@ -10,8 +10,9 @@ class Triangle {
     a, b, gamma -> c {calcSide};
     a, c, beta -> b {calcSide};
     b, c, alpha -> a {calcSide};
-    b, c -> h {calcHeight};
-    b, a -> h{calcHeight};
+    S, a -> h {calcHeightS};
+    b, gamma -> h {calcHeight};
+    c, beta -> h {calcHeight};
     b, h -> gamma {calcAngle};
     c, h -> beta {calcAngle};
     a, b, alpha -> beta {calcAngleSin};
@@ -20,11 +21,21 @@ class Triangle {
     b, a, beta -> alpha {calcAngleSin};
     c, a, gamma -> alpha{calcAngleSin};
     c, b, gamma -> beta {calcAngleSin};
+    a, alpha, beta -> b{sinCalcSide};
+    a, alpha, gamma -> c{sinCalcSide};
+    b, beta, gamma -> c{sinCalcSide};
+    b, beta, alpha -> a{sinCalcSide};
+    c, gamma, alpha -> a{sinCalcSide};
+    c, gamma, beta -> b{sinCalcSide};
     S, a, b, c -> ocr {calcOcr};
     icr = S / (p / 2);
     }@*/
-    double calcHeight(double a, double b){
-        return Math.sqrt(a*a - b*b/4);
+    double calcHeightS(double S, double a){
+        return 2*S/a;
+    }
+
+    double calcHeight(double b, double gamma){
+        return b*Math.cos(gamma);
     }
 
     double calcAngle(double a, double h){
