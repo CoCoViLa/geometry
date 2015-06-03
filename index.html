@@ -40,16 +40,53 @@
       <div id="content">
         <div class="panel panel-default">
           <div class="panel-body">
-<p>Geometry - A CoCoVila package that solves basic geometric problems.</p>
-
-<img src="img/geo_scheme1.png" alt="scheme1" class="center-block">
-<p> This package consists of six shapes (a triangle, a trapezoid, a square, a circle, a right triangle and a rectangle), four operators ( "+", "-", "/" and "*"), a relation class and an answer block.
+<p>
+Geometry - A CoCoVila package that solves basic geometric problems.
 </p>
-<p>The package allows solving problems that consist of basic geometric shapes such as a circle, a triangle a trapezoid or a rectangle and basic operations such as summation, subtraction, multiplication and division. Any scheme that uses more complex shapes must be simplified in order to use with this package. It is a good introductory package for someone who has never used CoCoViLa before. The geometry used is easy enough to understand quickly and the shapes are fun to play with.</p>
-
-<p>Above we have created a problem, in which the base of a triangle has an equal length with a side of a square and the height of a triangle on that base is equal to the radius of the circle. The areas of square and triangle are also equal. We wish to calculate the diameter of the circle. Below is the result that CoCoViLa produces.
+<p>
+This package consists of six shapes (a triangle, a trapezoid, a square, a circle, a right triangle and a rectangle), four operators ( "+", "-", "/" and "*"), a relation class and an answer block.
 </p>
-<img src="img/geo_scheme2.png" alt="scheme2" class="center-block">
+
+<img src="img/all-shapes.png" alt="scheme1" class="center-block">
+
+<p>
+The package allows solving problems that consist of basic geometric shapes such as a circle, a triangle a trapezoid or a rectangle and basic operations such as summation, subtraction, multiplication and division. Any real object that consists of more complex shapes must be simplified in order to use with this package. It is also possible to calculate a volume of an object if the user manages to simplify the object. It is a good introductory package for someone who has never used CoCoViLa before. The geometry used is easy enough to understand quickly and the shapes are fun to play with.
+</p>
+
+<p>
+For a quick example of what CoCoViLa and the geometry package can do, let's imagine a cylinder.
+</p>
+
+<img src="img/cylinder.png" alt="A Glorious Cylinder" class="center-block">
+
+<p>
+Now, the cylinder on the picture consists of a rectangle and two circles. Let's say that we wan't to calculate the volume of a cylinder we have. We have measured the cylinder and we know that it's height is 10 centimetres and it's perimeter is 12.6 centimetres.
+</p>
+<p>
+ In CoCoViLa the attributes of an object are represented as ports. Ports are in turn connected to the fields, that can be evaluated. If this is difficult to understand, don't worry, it will get cleared through examples. Below is the cylinder made up of two blocks in CoCoVila
+ </p>
+
+<img src="img/CylinderScheme.png" alt="A Magnificent CoCoViLa Cylinder" class="center-block">
+
+<p>
+The little dot's on the shapes are ports, mentioned in the previous section. The two connected ports are the diameter of the circle and the side of the rectangle. The connection between them means, that the diameter and the side are equal. Looking back on the cylinder, this should be easy to spot. By now, we have successfully created a cylinder, but we have yet to add our measurements to it.
+</p>
+<p>
+Now, we know that the perimeter of the cylinder is 12.6 centimetres and the height of it is 10 centimetres. Let's add that to the scheme.
+</p>
+<img src="img/MeasuredCyl.png" alt="A Measured Cylinder of CoCoviLa" class="center-block">
+<p>
+Magnificent! We have a cylinder with measurements. All that's left to do is to calculate the volume of the cylinder. The formula for that is: volume = Height * base. Great, let's add that to the scheme.
+</p>
+<img src="img/CylMultiplied.png" alt="Calculating the Volume" class="center-block">
+<p>
+The geometry package also has a block for showing the answer. To see the answer, let's add that as well.
+</p>
+<img src="img/CylEqual.png" alt="A Cylinder with the answer block" class="center-block">
+<p>
+Now we should be all set to run the program, and calculate the volume of the cylinder. The result is down below
+</p>
+<img src="img/CylResults.png" alt="scheme2" class="center-block">
 <p>The package can be downloaded from <a href="https://github.com/AndreasNagel/geometry/tree/master">github</a>.</p>
 
           </div>
