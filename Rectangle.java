@@ -1,23 +1,43 @@
 class Rectangle {
     /*@ specification Rectangle {
     double a, b, d, S, p;
-    S = a * b;
-    p = 2 * a + 2 * b;
+    a, b -> S{calcS};
+    a, b -> p {calcP};
     a, b -> d {calcDiag};
-    b = S / a;
-    a = S / b;
-    a = p / 2 - b;
-    b = p / 2 - a;
+    S, a -> b {sideFromS};
+    S, b -> a {sideFromS};
+    p, b -> a{sideFromP};
+    p, a -> b {sideFromP};
     d, b -> a {calcSide};
     d, a -> b {calcSide};
     }@*/
     
     double calcDiag(double a, double b){
-        return Math.hypot(a, b);
+        double out = Math.hypot(a, b);
+        return Math.round(out * 100) / (double)100;
+    }
+
+    double sideFromS(double S, double a){
+        double out = S/a;
+        return Math.round(out * 100) / (double)100;
+    }
+
+    double sideFromP(double p, double a){
+        double out = p / 2 - a;
+        return Math.round(out * 100) / (double)100;
     }
 
     double calcSide(double d, double a){
-        return Math.sqrt(d * d - a * a);
-}
- 
+        double out = Math.sqrt(d * d - a * a);
+        return Math.round(out * 100) / (double)100;
+    }
+
+    double calcP(double a, double b){
+        double out = 2 * a + 2 * b;
+        return Math.round(out * 100) / (double)100;
+    }
+
+    double calcS(double a, double b){
+        return Math.round(a * b * 100) / (double)100;
+    }
 }

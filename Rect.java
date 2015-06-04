@@ -1,15 +1,36 @@
 class Rect {
     /*@ specification Rect {
         double a, d, S, p,f;
-        S = a ^ 2;
-        p = 4 * a;
-        d = a * 2 ^(0.5);
-        d -> a {sqrt};
+        a -> S {area};
+        a -> p {perimeter};
+        S -> a {sqrt};
+        p -> a {FromP};
+        d -> a {FromD};
     }
-	@*/
-    double sqrt(double a)
-    {
-        return Math.sqrt(a);
+    @*/
+    double sqrt(double a){
+        double out = Math.sqrt(a);
+        return Math.round(out*100) / (double)100;
+    }
+
+    double FromD(double d){
+        double out = d * Math.sqrt(2);
+        return Math.round(out*100) / (double)100;
+    }
+
+    double FromP(double p){
+        double out = p / 4;
+        return Math.round(out * 100) / (double)100;
+    }
+
+    double area(double a){
+        double out = a * a;
+        return Math.round(out * 100) / (double)100;
+    }
+
+    double perimeter(double a){
+        double out = 4 * a;
+        return Math.round(out * 100) / (double)100;
     }
 }
 

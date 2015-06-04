@@ -2,7 +2,6 @@ class Triangle {
     /*@ specification Triangle {
     double a, b, c, h, S, p, alpha, beta, gamma, delta;
     double icr, ocr;
-    p = a + b + c;
     a, b, gamma -> S {calcAreaSin};
     b, c, alpha -> S {calcAreaSin};
     a, c, beta -> S {calcAreaSin};
@@ -27,42 +26,71 @@ class Triangle {
     b, beta, alpha -> a{sinCalcSide};
     c, gamma, alpha -> a{sinCalcSide};
     c, gamma, beta -> b{sinCalcSide};
+    alpha, beta -> gamma {calcLastAngle};
+    alpha, gamma -> beta {calcLastAngle};
+    beta, gamma -> alpha {calcLastAngle};
     S, a, b, c -> ocr {calcOcr};
-    icr = S / (p / 2);
+    S, p -> icr {calcIcr};
+    a, b, c -> p {perimeter};
     }@*/
+
+    double perimeter(double a, double b, double c){
+        double out = a + b + c;
+        return Math.round(out * 100) / (double)100;
+    }
+
+    double calcIcr(double S, double p){
+        double out = S / (p / 2);
+        return Math.round(out * 100) / (double)100;
+    }
+
     double calcHeightS(double S, double a){
-        return 2*S/a;
+        double out = 2*S/a;
+        return Math.round(out * 100) / (double)100;
     }
 
     double calcHeight(double b, double gamma){
-        return b*Math.cos(gamma);
+        double out = b*Math.cos(gamma);
+        return Math.round(out * 100) / (double)100;
     }
 
     double calcAngle(double a, double h){
-        return Math.asin(h / b);
+        double out = Math.asin(h / b);
+        return Math.round(out * 10000) / (double)10000;
     }
     double calcAngleSin(double a, double b, double alpha){
-        return Math.asin(Math.sin(alpha) * b/ a);
+        double out = Math.asin(Math.sin(alpha) * b/ a);
+        return Math.round(out * 10000) / (double)10000;
     }
 
     double calcAreaSin(double a, double b, double gamma){
-    return a * b * Math.sin(gamma) / 2;
+        double out = a * b * Math.sin(gamma) / 2;
+        return Math.round(out * 100) / (double)100;
     }
 
     double heron(double a, double b, double c){
-    double p = (a + b + c)/2;
-    return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        double p = (a + b + c)/2;
+        double out = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        return Math.round(out * 100) / (double)100;
     }
 
     double calcOcr(double S, double a, double b, double c){
-          return a * b * c / (4 * S);
+        double out = a * b * c / (4 * S);
+        return Math.round(out * 100) / (double)100;
     }
 
     double calcSide(double a, double b, double gamma){
-        return Math.sqrt(a*a + b*b - 2*a*b*Math.cos(gamma));
+        double out = Math.sqrt(a*a + b*b - 2*a*b*Math.cos(gamma));
+        return Math.round(out * 100) / (double)100;
     }
 
     double sinCalcSide(double a, double alpha, double beta){
-        return a/Math.sin(alpha)*Math.sin(beta);
+        double out = a/Math.sin(alpha)*Math.sin(beta);
+        return Math.round(out * 100) / (double)100;
     }
+
+    double calcLastAngle(double alpha, double beta){
+        double out = Math.PI - alpha - beta;
+        return Math.round(out * 10000) / (double)10000;
+}
 }
