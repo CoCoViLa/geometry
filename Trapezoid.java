@@ -1,72 +1,28 @@
 class Trapezoid {
     /*@ specification Trapezoid {
-    double a, b, c, h, S, p, alpha, beta, d, x, y;
-    const double rightAngle = Math.PI/2;
-
-    p = a + b + c + d;
-    b, a, y -> x {calcAXY};
-    b, a, x -> y {calcAXY};
-    b, x, y -> a {calcAXY};
-    a, x, y -> b {bFromA};
-    a, b, c, d -> h{calcHeightbySides};
+    double a, b, c, h, S, p, alpha, beta, gamma, d, x;
+    a = b - 2 * x;
+    b = a + 2 * x;
+    x = (b - a) /2;
+    S = (a + b) / 2 * h;
+    p = a + b + 2 * c;
     c, x -> h {calcHeight};
-    c, h -> x {calcHeight};
-    d, h -> y {calcHeight};
-    d, y -> h {calcHeight};
     x, h -> c {calcSide};
-    y, h -> d {calcSide};
-    c, h -> alpha{calcAngle};
-    c, x -> alpha{calcCosAngle};
-    d, h -> beta {calcAngle};
-    d, x -> beta{calcCosAngle};
-
-    a, b, c, d -> p {perimeter};
-    a, b, h -> S {calcArea};
+    a, b, h -> S {calcSpace};
+    a, b, c -> p {calcP};
     }@*/
 
-    double bFromA(double a, double x, double y){
-        double out = a + x + y;
-        return Math.round(out * 100) / (double)100;
+    double calcP(double a, double b, double c){
+        return a + b + 2 * c;
     }
-
-    double calcAXY(double a, double b, double c){
-        double out = a - b - x;
-        return Math.round(out * 100) / (double)100;
-    }
-
-    double calcHeightbySides(double a, double b, double c, double d){
-        double helper = (a - b + c - d) * (a - b - c + d) * (a - b + c + d) * (b - a + c + d);
-        helper = Math.sqrt(helper);
-        double out = helper / (2 * (b - a));
-        return Math.round(out * 100) / (double)100;
-    }
-
-    double calcCosAngle(double c, double b){
-        double out = Math.acos(b/c);
-        return Math.round(out * 10000) / (double)10000;
-    }
-
-    double calcAngle(double c, double a){
-        double out = Math.asin(a/c);
-        return Math.round(out * 100) / (double)100;
-    }
-
-    double calcArea(double a, double b, double h){
-        double out = (a + b) / 2 * h;
-        return Math.round(out * 100) / (double)100;
+    double calcSpace(double a, double b, double h){
+        return (a + b) / 2 * h;
     }
     double calcHeight(double c, double b){
-        double out = Math.sqrt(c*c - b*b);
-        return Math.round(out * 100) / (double)100;
+        return Math.sqrt(c*c - b*b);
     }
 
     double calcSide(double a, double b){
-        double out = Math.hypot(a, b);
-        return Math.round(out * 100) / (double)100;
-    }
-
-    double perimeter(double a, double b, double c, double d){
-        double out = a + b + c + d;
-        return Math.round(out * 100) / (double)100;
+        return Math.hypot(a, b);
     }
 }

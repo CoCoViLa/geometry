@@ -1,11 +1,9 @@
 class Subtract {
     /*@ specification Subtract {
-        double in1;
-        double in2;
-        double out;
-        in1, in2 -> out {gOut};
+    double in1;
+    double in2;
+    double out;
+    out = in1 - in2;
     }@*/
-    double gOut(double in1, double in2){
-        return Math.round(in1*in2*100) / (double)100;
-    }
+ 
 }
