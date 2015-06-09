@@ -29,6 +29,7 @@ class Triangle {
     c, gamma, beta -> b{sinCalcSide};
     S, a, b, c -> ocr {calcOcr};
     icr = S / (p / 2);
+    ocr = a * b * c / 4 / S;
     }@*/
     double calcHeightS(double S, double a){
         return 2*S/a;
