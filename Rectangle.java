@@ -1,15 +1,13 @@
 class Rectangle {
     /*@ specification Rectangle {
-    double a, b, d, S, p;
-    S = a * b;
-    p = 2 * a + 2 * b;
-    a, b -> d {calcDiag};
-    b = S / a;
-    a = S / b;
-    a = p / 2 - b;
-    b = p / 2 - a;
-    d, b -> a {calcSide};
-    d, a -> b {calcSide};
+        double a, b, d, S, p;
+        S = a * b;
+        p = 2 * a + 2 * b;
+        d = (a^2 + b^2)^(0.5);
+        b = S / a;
+        a = S / b;
+        a = p / 2 - b;
+        b = p / 2 - a;
     }@*/
     
     double calcDiag(double a, double b){
@@ -18,6 +16,5 @@ class Rectangle {
 
     double calcSide(double d, double a){
         return Math.sqrt(d * d - a * a);
-}
- 
+    }
 }

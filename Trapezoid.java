@@ -1,30 +1,21 @@
 class Trapezoid {
     /*@ specification Trapezoid {
-    double a, b, c, h, S, p, alpha, beta, gamma, d, x, y;
-    x = b - a - y;
-    S = (a + b) / 2 * h;
-    p = a + b + c + d;
-    c, x -> h {calcHeight};
-    d, y -> h {calcHeight};
-    a, b, c, d -> h{calcHeightbySides};
-    c, h -> x {calcHeight};
-    d, h -> y {calcHeight};
-    x, h -> c {calcSide};
-    y, h -> c {calcSide};
-    a, b, h -> S {calcSpace};
-    a, b, c -> p {calcP};
-    c, h -> alpha{calcAngle};
-    c, x -> alpha{calcCosAngle};
-    d, h -> beta {calcAngle};
-    d, x -> beta{calcCosAngle};
+        double a, b, c, h, S, p, alpha, beta, gamma, d, x, y;
+        x = b - a - y;
+        S = (a + b) / 2 * h;
+        p = a + b + c + d;
+        h = (c^2 - x^2)^(0.5);
+        h = (d^2 - y^2)^(0.5);
+        c, x -> h {calcHeight};
+        d, y -> h {calcHeight};
+        a, b, c, d -> h{calcHeightbySides};
+
+        c, h -> alpha{calcAngle};
+        c, x -> alpha{calcCosAngle};
+        d, h -> beta {calcAngle};
+        d, x -> beta{calcCosAngle};
     }@*/
 
-    double calcP(double a, double b, double c){
-        return a + b + 2 * c;
-    }
-    double calcSpace(double a, double b, double h){
-        return (a + b) / 2 * h;
-    }
     double calcHeight(double c, double b){
         return Math.sqrt(c*c - b*b);
     }
