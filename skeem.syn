@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE scheme SYSTEM "scheme.dtd">
+<scheme package="geometry">
+<object name="Triangle_0" type="Triangle" static="false">
+<properties x="386" y="198" xsize="1.0" ysize="1.0" strict="false"/>
+<fields>
+<field name="a" type="double" value="10"/>
+<field name="b" type="double"/>
+<field name="c" type="double"/>
+<field name="h" type="double"/>
+<field name="S" type="double"/>
+<field name="p" type="double"/>
+<field name="alpha" type="double"/>
+<field name="beta" type="double"/>
+<field name="delta" type="double" value="1.570796"/>
+<field name="gamma" type="double"/>
+<field name="ocr" type="double"/>
+<field name="icr" type="double"/>
+</fields>
+</object>
+<object name="Circle_0" type="Circle" static="false">
+<properties x="700" y="288" xsize="1.0" ysize="1.0" strict="false"/>
+<fields>
+<field name="r" type="double"/>
+<field name="d" type="double"/>
+<field name="S" type="double"/>
+<field name="p" type="double"/>
+</fields>
+</object>
+<object name="Rect_0" type="Rect" static="false">
+<properties x="682" y="504" xsize="1.0" ysize="1.0" strict="false"/>
+<fields>
+<field name="a" type="double" value="10"/>
+<field name="d" type="double"/>
+<field name="S" type="double"/>
+<field name="p" type="double"/>
+</fields>
+</object>
+<object name="Result_0" type="Result" static="false">
+<properties x="972" y="572" xsize="1.0" ysize="1.0" strict="false"/>
+<fields>
+<field name="result" type="double" nature="goal"/>
+<field name="input1" type="double"/>
+<field name="input2" type="double"/>
+<field name="operation" type="String" value="-"/>
+</fields>
+</object>
+<connection obj1="Triangle_0" port1="a" obj2="Triangle_0" port2="c" strict="false">
+<breakpoints/>
+</connection>
+<connection obj1="Triangle_0" port1="c" obj2="Triangle_0" port2="b" strict="false">
+<breakpoints/>
+</connection>
+<connection obj1="Triangle_0" port1="icr" obj2="Circle_0" port2="r" strict="false">
+<breakpoints/>
+</connection>
+<connection obj1="Circle_0" port1="d" obj2="Rect_0" port2="d" strict="false">
+<breakpoints/>
+</connection>
+<connection obj1="Circle_0" port1="S" obj2="Result_0" port2="input1" strict="false">
+<breakpoints/>
+</connection>
+<connection obj1="Rect_0" port1="S" obj2="Result_0" port2="input2" strict="false">
+<breakpoints/>
+</connection>
+</scheme>

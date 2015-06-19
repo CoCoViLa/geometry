@@ -1,0 +1,1450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE package SYSTEM "package2.dtd">
+<package>
+    <name>geometry</name>
+    <description>Geometry</description>
+    <class type="class">
+        <name>RTriangle</name>
+        <description>a triangle with a right angle.</description>
+        <icon>RTriangle.png</icon>
+        <graphics>
+            <bounds height="218" width="116" x="0" y="0"/>
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="4" transparency="255" x1="30" x2="72" y1="103" y2="174"/>
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="4" transparency="255" x1="46" x2="108" y1="197" y2="211"/>
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="68" x2="95" y1="169" y2="204"/>
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="10" x2="102" y1="211" y2="211"/>            
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="4" transparency="255" x1="10" x2="108" y1="214" y2="214"/> 
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="10" x2="98" y1="203" y2="204"/>
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="80" x2="82" y1="162" y2="201"/>
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="3" transparency="255" x1="7" x2="22" y1="7" y2="55"/>
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="3" transparency="255" x1="7" x2="7" y1="206" y2="7"/>
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="101" x2="10" y1="206" y2="20"/>
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="66" x2="10" y1="149" y2="30"/>
+            <rect colour="-226215" filled="true" fixed="false"
+                height="29" linetype="0.0" stroke="10"
+                transparency="255" width="13" x="5" y="46"/>
+            <rect colour="-226215" filled="true" fixed="false"
+                height="68" linetype="0.0" stroke="10"
+                transparency="255" width="74" x="5" y="145"/>
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="63" x2="10"
+                y1="148" y2="44"/>
+            <line colour="-226215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="31" x2="9" y1="89" y2="88"/>
+            <rect colour="-226215" filled="true" fixed="false"
+                height="25" linetype="0.0" stroke="10"
+                transparency="255" width="30" x="5" y="67"/>
+            <rect colour="-226215" filled="true" fixed="false"
+                height="120" linetype="0.0" stroke="10"
+                transparency="255" width="47" x="5" y="92"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="112" x2="5" y1="216" y2="1"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="5" x2="5" y1="216" y2="1"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="5" x2="112" y1="216" y2="216"/>
+            <arc arcAngle="90" colour="-16777216" filled="false"
+                fixed="false" height="54" linetype="0.0"
+                startAngle="360" stroke="1" transparency="255"
+                width="54" x="-20" y="188"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="b"
+                transparency="255" x="-2" y="135"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="c"
+                transparency="255" x="48" y="110"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="10" fontstyle="0" string="alpha"
+                transparency="255" x="-2" y="35"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="a"
+                transparency="255" x="46" y="213"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="S"
+                transparency="255" x="27" y="145"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="p"
+                transparency="255" x="52" y="55"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="10" fontstyle="0" string="beta"
+                transparency="255" x="66" y="190"/>
+            <arc arcAngle="49" colour="-16777216" filled="false"
+                fixed="false" height="42" linetype="0.0"
+                startAngle="265" stroke="1" transparency="255"
+                width="69" x="-25" y="22"/>
+            <arc arcAngle="67" colour="-16777216" filled="false"
+                fixed="false" height="108" linetype="0.0"
+                startAngle="123" stroke="1" transparency="255"
+                width="98" x="64" y="152"/>
+            <oval colour="-16777216" filled="true" fixed="false"
+                height="6" linetype="0.0" stroke="2"
+                transparency="255" width="6" x="15" y="205"/>
+        </graphics>
+        <ports>
+            <port name="b" portConnection="" strict="false"
+                type="double" x="7" y="138"/>
+            <port name="c" portConnection="" strict="false"
+                type="double" x="62" y="113"/>
+            <port name="alpha" portConnection="" strict="false"
+                type="double" x="15" y="39"/>
+            <port name="a" portConnection="" strict="false"
+                type="double" x="59" y="217"/>
+            <port name="S" portConnection="" strict="false"
+                type="double" x="42" y="151"/>
+            <port name="p" portConnection="" strict="false"
+                type="double" x="62" y="65"/>
+            <port name="beta" portConnection="" strict="false"
+                type="double" x="97" y="205"/>
+        </ports>
+        <fields>
+            <field name="a" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="= "
+                            transparency="255" x="55" y="213"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="*self"
+                            transparency="255" x="65" y="213"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="b" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="= "
+                            transparency="255" x="7" y="135"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="*self"
+                            transparency="255" x="17" y="135"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="c" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="= "
+                            transparency="255" x="56" y="110"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="*self"
+                            transparency="255" x="66" y="110"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="S" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="= "
+                            transparency="255" x="35" y="145"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="*self"
+                            transparency="255" x="45" y="145"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="p" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="= "
+                            transparency="255" x="62" y="55"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="*self"
+                            transparency="255" x="72" y="55"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="alpha" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="10" fontstyle="0" string="= "
+                            transparency="255" x="28" y="35"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="10" fontstyle="0" string="*self"
+                            transparency="255" x="7" y="55"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="beta" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="10" fontstyle="0" string="= "
+                            transparency="255" x="88" y="190"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="10" fontstyle="0" string="*self"
+                            transparency="255" x="67" y="200"/>
+                    </graphics>
+                </known>
+            </field>
+        </fields>
+    </class>
+    <class type="class">
+        <name>Rect</name>
+        <description>Rect</description>
+        <icon>ruut.png</icon>
+        <graphics>
+            <bounds height="137" width="142" x="0" y="0"/>
+            <rect colour="-4390956" filled="true" fixed="false"
+                height="138" linetype="0.0" stroke="2"
+                transparency="255" width="138" x="0" y="0"/>
+            <rect colour="-16777216" filled="false" fixed="false"
+                height="138" linetype="0.0" stroke="2"
+                transparency="255" width="138" x="0" y="0"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="1" transparency="255" x1="0" x2="138" y1="138" y2="0"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="13" fontstyle="0" string="S"
+                transparency="255" x="27" y="30"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="13" fontstyle="0" string="a"
+                transparency="255" x="53" y="-7"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="13" fontstyle="0" string="d"
+                transparency="255" x="55" y="63"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="13" fontstyle="0" string="p"
+                transparency="255" x="145" y="87"/>
+        </graphics>
+        <ports>
+            <port name="a" portConnection="" strict="true" type="double"
+                x="69" y="0"/>
+            <port name="d" portConnection="" strict="true" type="double"
+                x="69" y="69"/>
+            <port name="S" portConnection="" strict="false"
+                type="double" x="45" y="35"/>
+            <port name="p" portConnection="" strict="false"
+                type="double" x="158" y="96"/>
+        </ports>
+        <fields>
+            <field name="a" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="= "
+                            transparency="255" x="62" y="-7"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="*self"
+                            transparency="255" x="72" y="-7"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="d" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="= "
+                            transparency="255" x="64" y="63"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="*self"
+                            transparency="255" x="74" y="63"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="S" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="= "
+                            transparency="255" x="37" y="30"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="*self"
+                            transparency="255" x="47" y="30"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="p" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="153" y="87"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="163" y="87"/>
+                    </graphics>
+                </known>
+            </field>
+        </fields>
+    </class>
+    <class type="class">
+        <name>Triangle</name>
+        <description>Võrdkülgne kolmnurk</description>
+        <icon>triangle.png</icon>
+        <graphics>
+            <bounds height="217" width="223" x="0" y="0"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="4" transparency="255" x1="138" x2="180" y1="103" y2="174"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="4" transparency="255" x1="154" x2="216" y1="197" y2="211"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="4" transparency="255" x1="90" x2="113" y1="76" y2="7"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="17" x2="113" y1="208" y2="14"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="176" x2="203"
+                y1="169" y2="204"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="19" x2="210" y1="208" y2="208"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="18" x2="206" y1="203" y2="204"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="188" x2="190"
+                y1="162" y2="201"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="209" x2="113"
+                y1="206" y2="13"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="174" x2="114"
+                y1="149" y2="30"/>
+            <rect colour="-26215" filled="true" fixed="false"
+                height="29" linetype="0.0" stroke="10"
+                transparency="255" width="29" x="97" y="46"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="114" x2="88" y1="26" y2="85"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="47" x2="40" y1="160" y2="206"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="47" x2="30" y1="169" y2="203"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="68" x2="69" y1="125" y2="145"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="86" x2="57" y1="83" y2="149"/>
+            <rect colour="-26215" filled="true" fixed="false"
+                height="68" linetype="0.0" stroke="10"
+                transparency="255" width="143" x="44" y="145"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="171" x2="110"
+                y1="148" y2="44"/>
+            <line colour="-26215" fixed="false" linetype="0.0"
+                stroke="10" transparency="255" x1="139" x2="85" y1="89" y2="88"/>
+            <rect colour="-26215" filled="true" fixed="false"
+                height="25" linetype="0.0" stroke="10"
+                transparency="255" width="56" x="87" y="67"/>
+            <rect colour="-26215" filled="true" fixed="false"
+                height="120" linetype="0.0" stroke="10"
+                transparency="255" width="90" x="70" y="92"/>
+            <arc arcAngle="92" colour="-16777216" filled="false"
+                fixed="false" height="75" linetype="0.0"
+                startAngle="356" stroke="1" transparency="255"
+                width="102" x="-23" y="173"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="219" x2="114" y1="212" y2="1"/>
+            <rect colour="-10066177" filled="true" fixed="false"
+                height="0" linetype="0.0" stroke="2" transparency="255"
+                width="0" x="157" y="209"/>
+            <rect colour="-10066177" filled="true" fixed="false"
+                height="0" linetype="0.0" stroke="2" transparency="255"
+                width="0" x="155" y="103"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="113" x2="113" y1="212" y2="0"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="114" x2="219" y1="213" y2="213"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="9" x2="114" y1="213" y2="213"/>
+            <arc arcAngle="96" colour="-16777216" filled="false"
+                fixed="false" height="42" linetype="0.0"
+                startAngle="350" stroke="1" transparency="255"
+                width="54" x="87" y="189"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="113" x2="8" y1="0" y2="212"/>
+            <arc arcAngle="79" colour="-16777216" filled="false"
+                fixed="false" height="94" linetype="0.0"
+                startAngle="235" stroke="1" transparency="255"
+                width="80" x="70" y="-34"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="1" transparency="255" x1="113" x2="60" y1="142" y2="113"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="1" transparency="255" x1="113" x2="9" y1="144" y2="212"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="p"
+                transparency="255" x="170" y="53"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="a"
+                transparency="255" x="104" y="228"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="b"
+                transparency="255" x="48" y="105"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="S"
+                transparency="255" x="139" y="164"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="c"
+                transparency="255" x="169" y="106"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="10" fontstyle="0" string="alpha"
+                transparency="255" x="98" y="48"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="10" fontstyle="0" string="beta"
+                transparency="255" x="180" y="192"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="10" fontstyle="0" string="gamma"
+                transparency="255" x="38" y="197"/>
+            <arc arcAngle="84" colour="-16777216" filled="false"
+                fixed="false" height="79" linetype="0.0"
+                startAngle="119" stroke="1" transparency="255"
+                width="103" x="169" y="159"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="r"
+                transparency="255" x="76" y="120"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="R"
+                transparency="255" x="55" y="174"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="h"
+                transparency="255" x="119" y="131"/>
+            <oval colour="-16777216" filled="true" fixed="false"
+                height="6" linetype="0.0" stroke="2"
+                transparency="255" width="6" x="123" y="200"/>
+        </graphics>
+        <ports>
+            <port name="b" portConnection="" strict="true" type="double"
+                x="58" y="111"/>
+            <port name="c" portConnection="" strict="true" type="double"
+                x="169" y="113"/>
+            <port name="alpha" portConnection="" strict="false"
+                type="double" x="110" y="33"/>
+            <port name="a" portConnection="" strict="true" type="double"
+                x="115" y="215"/>
+            <port name="S" portConnection="" strict="true" type="double"
+                x="149" y="151"/>
+            <port name="p" portConnection="" strict="true" type="double"
+                x="170" y="64"/>
+            <port name="beta" portConnection="" strict="false"
+                type="double" x="206" y="202"/>
+            <port name="gamma" portConnection="" strict="false"
+                type="double" x="29" y="198"/>
+            <port name="h" portConnection="" strict="true" type="double"
+                x="113" y="132"/>
+            <port name="icr" portConnection="" strict="true"
+                type="double" x="83" y="124"/>
+            <port name="ocr" portConnection="" strict="true"
+                type="double" x="64" y="178"/>
+        </ports>
+        <fields>
+            <field name="a" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="116" y="229"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="126" y="229"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="b" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="55" y="105"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="65" y="105"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="c" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="180" y="106"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="190" y="106"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="h" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="130" y="131"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="140" y="131"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="S" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="151" y="164"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="161" y="164"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="p" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="184" y="53"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="194" y="53"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="alpha" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="10"
+                            fontstyle="0" string="= "
+                            transparency="255" x="93" y="58"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="10"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="103" y="58"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="beta" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="10"
+                            fontstyle="0" string="= "
+                            transparency="255" x="169" y="202"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="10"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="179" y="202"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="gamma" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="10"
+                            fontstyle="0" string="= "
+                            transparency="255" x="28" y="210"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="10"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="38" y="210"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="ocr" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="62" y="174"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="72" y="174"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="icr" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="84" y="120"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="94" y="120"/>
+                    </graphics>
+                </known>
+            </field>
+        </fields>
+    </class>
+    <class type="class">
+        <name>Circle</name>
+        <description>Circle</description>
+        <icon>ring.png</icon>
+        <graphics>
+            <bounds height="137" width="142" x="0" y="0"/>
+            <oval colour="-6697729" filled="true" fixed="false"
+                height="135" linetype="0.0" stroke="4"
+                transparency="255" width="137" x="1" y="2"/>
+            <oval colour="-16777216" filled="false" fixed="false"
+                height="138" linetype="0.0" stroke="2"
+                transparency="255" width="138" x="0" y="0"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="1" transparency="255" x1="69" x2="117" y1="69" y2="117"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="1" transparency="255" x1="0" x2="138" y1="69" y2="69"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="13" fontstyle="0" string="S"
+                transparency="255" x="60" y="30"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="13" fontstyle="0" string="d"
+                transparency="255" x="55" y="63"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="13" fontstyle="0" string="r"
+                transparency="255" x="90" y="110"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="13" fontstyle="0" string="p"
+                transparency="255" x="107" y="5"/>
+        </graphics>
+        <ports>
+            <port name="r" portConnection="" strict="true" type="double"
+                x="97" y="96"/>
+            <port name="d" portConnection="" strict="true" type="double"
+                x="69" y="69"/>
+            <port name="p" portConnection="" strict="false"
+                type="double" x="113" y="14"/>
+            <port name="S" portConnection="" strict="false"
+                type="double" x="69" y="36"/>
+        </ports>
+        <fields>
+            <field name="r" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="= "
+                            transparency="255" x="97" y="110"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="*self"
+                            transparency="255" x="107" y="110"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="d" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="= "
+                            transparency="255" x="63" y="63"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="*self"
+                            transparency="255" x="73" y="63"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="S" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="1" string="= "
+                            transparency="255" x="68" y="30"/>
+                        <text colour="-16777216" fontname="Arial"
+                            fontsize="12" fontstyle="0" string="*self"
+                            transparency="255" x="78" y="30"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="p" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="117" y="5"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="127" y="5"/>
+                    </graphics>
+                </known>
+            </field>
+        </fields>
+    </class>
+    <class type="class">
+        <name>Rectangle</name>
+        <description>Ristkülik</description>
+        <icon>Rectangle.png</icon>
+        <graphics>
+            <bounds height="73" width="189" x="0" y="0"/>
+            <rect colour="-52" filled="true" fixed="false" height="58"
+                linetype="0.0" stroke="1" transparency="255" width="177"
+                x="6" y="9"/>
+            <rect colour="-16777216" filled="false" fixed="false"
+                height="61" linetype="0.0" stroke="2" transparency="255"
+                width="180" x="4" y="7"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="6" x2="183" y1="68" y2="8"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="94" x2="94" y1="39" y2="39"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="a"
+                transparency="255" x="80" y="0"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="b"
+                transparency="255" x="-5" y="28"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="d"
+                transparency="255" x="100" y="45"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="p"
+                transparency="255" x="197" y="32"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="S"
+                transparency="255" x="40" y="37"/>
+        </graphics>
+        <ports>
+            <port name="a" portConnection="" strict="false"
+                type="double" x="91" y="7"/>
+            <port name="b" portConnection="" strict="false"
+                type="double" x="4" y="33"/>
+            <port name="d" portConnection="" strict="false"
+                type="double" x="93" y="39"/>
+            <port name="S" portConnection="" strict="false"
+                type="double" x="52" y="22"/>
+            <port name="p" portConnection="" strict="false"
+                type="double" x="208" y="17"/>
+        </ports>
+        <fields>
+            <field name="a" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="88" y="0"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="98" y="0"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="b" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="5" y="28"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="15" y="28"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="d" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="110" y="45"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="120" y="45"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="S" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="50" y="37"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="60" y="37"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="p" type="double">
+                <known>
+                    <graphics>
+                    <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="207" y="33"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="217" y="33"/>
+                    </graphics>
+                </known>
+            </field>
+        </fields>
+    </class>
+    <class type="class">
+        <name>Trapezoid</name>
+        <description>Trapets</description>
+        <icon>Trapezoid.png</icon>
+        <graphics>
+            <bounds height="218" width="328" x="0" y="0"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="12" linetype="0.0" stroke="8" transparency="255"
+                width="291" x="24" y="196"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="20" linetype="0.0" stroke="8" transparency="255"
+                width="284" x="27" y="182"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="22" linetype="0.0" stroke="8" transparency="255"
+                width="68" x="32" y="174"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="28" linetype="0.0" stroke="8" transparency="255"
+                width="263" x="40" y="165"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="27" linetype="0.0" stroke="8" transparency="255"
+                width="253" x="43" y="153"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="18" linetype="0.0" stroke="8" transparency="255"
+                width="215" x="48" y="148"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="73" linetype="0.0" stroke="8" transparency="255"
+                width="235" x="53" y="137"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="29" linetype="0.0" stroke="8" transparency="255"
+                width="221" x="59" y="121"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="23" linetype="0.0" stroke="8" transparency="255"
+                width="25" x="234" y="80"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="41" linetype="0.0" stroke="8" transparency="255"
+                width="204" x="67" y="103"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="130" linetype="0.0" stroke="8"
+                transparency="255" width="171" x="83" y="77"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="37" linetype="0.0" stroke="8" transparency="255"
+                width="190" x="73" y="89"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="39" linetype="0.0" stroke="8" transparency="255"
+                width="161" x="88" y="53"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="69" linetype="0.0" stroke="8" transparency="255"
+                width="140" x="100" y="35"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="30" linetype="0.0" stroke="8" transparency="255"
+                width="124" x="107" y="23"/>
+            <line colour="-6710785" fixed="false" linetype="0.0"
+                stroke="8" transparency="255" x1="220" x2="320" y1="9" y2="211"/>
+            <line colour="-6710785" fixed="false" linetype="0.0"
+                stroke="8" transparency="255" x1="15" x2="323" y1="211" y2="211"/>
+            <line colour="-6710785" fixed="false" linetype="0.0"
+                stroke="8" transparency="255" x1="117" x2="17" y1="9" y2="210"/>
+            <rect colour="-6710785" filled="true" fixed="false"
+                height="211" linetype="0.0" stroke="4" transparency="255"
+                width="109" x="114" y="3"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="326" x2="221" y1="212" y2="1"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="220" x2="115" y1="215" y2="4"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="222" x2="222" y1="213" y2="2"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="116" x2="116" y1="216" y2="5"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="222" x2="327" y1="215" y2="215"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="10" x2="115" y1="215" y2="215"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="115" x2="220" y1="2" y2="2"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="117" x2="222" y1="215" y2="215"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="p"
+                transparency="255" x="265" y="23"/>
+            <line colour="-16777216" fixed="false" linetype="0.0"
+                stroke="2" transparency="255" x1="9" x2="114" y1="215" y2="4"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="a"
+                transparency="255" x="149" y="-5"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="d"
+                transparency="255" x="273" y="100"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="c"
+                transparency="255" x="45" y="110"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="b"
+                transparency="255" x="156" y="230"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="x"
+                transparency="255" x="38" y="230"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="y"
+                transparency="255" x="260" y="230"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="h"
+                transparency="255" x="105" y="140"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="h"
+                transparency="255" x="211" y="126"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="12" fontstyle="0" string="S"
+                transparency="255" x="158" y="70"/>
+            <arc arcAngle="75" colour="-16777216" filled="false"
+                fixed="false" height="95" linetype="0.0"
+                startAngle="0" stroke="1" transparency="255"
+                width="120" x="-43" y="167"/>
+            <arc arcAngle="89" colour="-16777216" filled="false"
+                fixed="false" height="72" linetype="0.0"
+                startAngle="111" stroke="1" transparency="255"
+                width="103" x="270" y="165"/>
+            <arc arcAngle="112" colour="-16777216" filled="false"
+                fixed="false" height="38" linetype="0.0"
+                startAngle="345" stroke="1" transparency="255"
+                width="38" x="207" y="191"/>
+            <arc arcAngle="120" colour="-16777216" filled="false"
+                fixed="false" height="38" linetype="0.0" startAngle="83"
+                stroke="1" transparency="255" width="38" x="93" y="189"/>
+            <text colour="-16777216"
+                fontname="Arial" fontsize="10"
+                fontstyle="0" string="beta"
+                transparency="255" x="276" y="195"/>
+            <text colour="-16777216"
+                fontname="Arial" fontsize="10"
+                fontstyle="0" string="alpha"
+                transparency="255" x="27" y="184"/>
+            <oval colour="-16777216" filled="true" fixed="false"
+                height="6" linetype="0.0" stroke="2"
+                transparency="255" width="6" x="103" y="200"/>                
+            <oval colour="-16777216" filled="true" fixed="false"
+                height="6" linetype="0.0" stroke="2"
+                transparency="255" width="6" x="228" y="202"/>
+        </graphics>
+        <ports>
+            <port name="b" portConnection="" strict="true" type="double"
+                x="172" y="214"/>
+            <port name="d" portConnection="" strict="true" type="double"
+                x="274" y="110"/>
+            <port name="S" portConnection="" strict="true" type="double"
+                x="172" y="78"/>
+            <port name="p" portConnection="" strict="true" type="double"
+                x="275" y="35"/>
+            <port name="beta" portConnection="" strict="true"
+                type="double" x="304" y="207"/>
+            <port name="h" portConnection="" strict="true" type="double"
+                x="117" y="150"/>
+            <port name="h" portConnection="" strict="true" type="double"
+                x="220" y="135"/>
+            <port name="a" portConnection="" strict="true" type="double"
+                x="164" y="2"/>
+            <port name="c" portConnection="" strict="true" type="double"
+                x="60" y="115"/>
+            <port name="x" portConnection="" strict="true" type="double"
+                x="52" y="215"/>
+            <port name="y" portConnection="" strict="true" type="double"
+                x="270" y="215"/>
+            <port name="alpha" portConnection="" strict="true"
+                type="double" x="33" y="202"/>
+        </ports>
+        <fields>
+            <field name="a" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="162" y="-5"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="172" y="-5"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="b" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="166" y="230"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="176" y="230"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="c" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="55" y="110"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="65" y="110"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="d" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="286" y="100"/>
+                            <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="296" y="100"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="h" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="219" y="126"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="117" y="140"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="229" y="126"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="127" y="140"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="x" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="49" y="230"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="59" y="230"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="y" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="268" y="230"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="278" y="230"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="S" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="170" y="70"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="180" y="70"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="p" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="= "
+                            transparency="255" x="278" y="23"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="12"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="288" y="23"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="alpha" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="10"
+                            fontstyle="0" string="= "
+                            transparency="255" x="27" y="196"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="10"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="37" y="196"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="beta" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="10"
+                            fontstyle="0" string="= "
+                            transparency="255" x="270" y="207"/>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="10"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="280" y="207"/>
+                    </graphics>
+                </known>
+            </field>
+        </fields>
+    </class>
+    <class type="class">
+        <name>Sum</name>
+        <description>Sums together two values</description>
+        <icon>Sum.png</icon>
+        <graphics>
+            <bounds height="79" width="83" x="0" y="0"/>
+            <rect colour="-3342388" filled="true" fixed="false"
+                height="72" linetype="0.0" stroke="2" transparency="255"
+                width="71" x="7" y="2"/>
+            <rect colour="-16777216" filled="false" fixed="false"
+                height="73" linetype="0.0" stroke="2" transparency="255"
+                width="73" x="5" y="1"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="55" fontstyle="0" string="+"
+                transparency="255" x="20" y="54"/>
+        </graphics>
+        <ports>
+            <port name="in1" portConnection="" strict="true"
+                type="double" x="6" y="21"/>
+            <port name="in2" portConnection="" strict="true"
+                type="double" x="6" y="56"/>
+            <port name="out" portConnection="" strict="true"
+                type="double" x="78" y="40"/>
+        </ports>
+        <fields>
+            <field name="in1" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="13"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="7" y="14"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="in2" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="13"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="7" y="70"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="out" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="13"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="82" y="36"/>
+                    </graphics>
+                </known>
+            </field>
+        </fields>
+    </class>
+    <class type="class">
+        <name>Subtract</name>
+        <description>Subtracts in2 from in1</description>
+        <icon>Subtraction.png</icon>
+        <graphics>
+            <bounds height="79" width="83" x="0" y="0"/>
+            <rect colour="-13057" filled="true" fixed="false"
+                height="71" linetype="0.0" stroke="1" transparency="255"
+                width="70" x="5" y="3"/>
+            <rect colour="-16777216" filled="false" fixed="false"
+                height="73" linetype="0.0" stroke="2" transparency="255"
+                width="73" x="3" y="2"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="55" fontstyle="1" string="_"
+                transparency="255" x="26" y="29"/>
+        </graphics>
+        <ports>
+            <port name="in1" portConnection="" strict="true"
+                type="double" x="4" y="22"/>
+            <port name="in2" portConnection="" strict="true"
+                type="double" x="4" y="57"/>
+            <port name="out" portConnection="" strict="true"
+                type="double" x="76" y="41"/>
+        </ports>
+        <fields>
+            <field name="in1" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="13"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="7" y="14"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="in2" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="13"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="7" y="70"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="out" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="13"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="82" y="36"/>
+                    </graphics>
+                </known>
+            </field>
+        </fields>
+    </class>
+    <class type="class">
+        <name>Multiplication</name>
+        <description>multiplies in1 by in2</description>
+        <icon>Multiplication.png</icon>
+        <graphics>
+            <bounds height="79" width="83" x="0" y="0"/>
+            <rect colour="-3355393" filled="true" fixed="false"
+                height="71" linetype="0.0" stroke="1" transparency="255"
+                width="73" x="6" y="2"/>
+            <rect colour="-16777216" filled="false" fixed="false"
+                height="73" linetype="0.0" stroke="2" transparency="255"
+                width="73" x="5" y="1"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="55" fontstyle="0" string="x"
+                transparency="255" x="26" y="54"/>
+        </graphics>
+        <ports>
+            <port name="in1" portConnection="" strict="true"
+                type="double" x="6" y="21"/>
+            <port name="in2" portConnection="" strict="true"
+                type="double" x="6" y="56"/>
+            <port name="out" portConnection="" strict="true"
+                type="double" x="78" y="40"/>
+        </ports>
+        <fields>
+            <field name="in1" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="13"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="7" y="14"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="in2" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="13"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="7" y="70"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="out" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="13"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="82" y="36"/>
+                    </graphics>
+                </known>
+            </field>
+        </fields>
+    </class>
+    <class type="class">
+        <name>Division</name>
+        <description>Divides in1 with in2</description>
+        <icon>Division.png</icon>
+        <graphics>
+            <bounds height="79" width="83" x="0" y="0"/>
+            <rect colour="-3342439" filled="true" fixed="false"
+                height="70" linetype="0.0" stroke="1" transparency="255"
+                width="72" x="6" y="3"/>
+            <rect colour="-16777216" filled="false" fixed="false"
+                height="73" linetype="0.0" stroke="2" transparency="255"
+                width="73" x="5" y="1"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="55" fontstyle="0" string="/"
+                transparency="255" x="31" y="56"/>
+        </graphics>
+        <ports>
+            <port name="in1" portConnection="" strict="true"
+                type="double" x="6" y="21"/>
+            <port name="in2" portConnection="" strict="true"
+                type="double" x="6" y="56"/>
+            <port name="out" portConnection="" strict="true"
+                type="double" x="78" y="40"/>
+        </ports>
+        <fields>
+            <field name="in1" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="13"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="7" y="14"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="in2" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="13"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="7" y="70"/>
+                    </graphics>
+                </known>
+            </field>
+            <field name="out" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="13"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="82" y="36"/>
+                    </graphics>
+                </known>
+            </field>
+        </fields>
+    </class>
+    <class type="class">
+        <name>Equals</name>
+        <description>prints out the answer</description>
+        <icon>Equals.png</icon>
+        <graphics>
+            <bounds height="79" width="83" x="0" y="0"/>
+            <rect colour="-3342388" filled="true" fixed="false"
+                height="72" linetype="0.0" stroke="2" transparency="255"
+                width="71" x="7" y="2"/>
+            <rect colour="-16777216" filled="false" fixed="false"
+                height="73" linetype="0.0" stroke="2" transparency="255"
+                width="73" x="5" y="1"/>
+        </graphics>
+        <ports>
+            <port name="in1" portConnection="" strict="true"
+                type="double" x="4" y="38"/>
+        </ports>
+        <fields>
+            <field name="in1" type="double" nature="goal">
+                <known>
+                    <graphics>
+                        <text colour="-16777216"
+                            fontname="Arial" fontsize="25"
+                            fontstyle="0" string="*self"
+                            transparency="255" x="10" y="45"/>
+                    </graphics>
+                </known>
+            </field>
+        </fields>
+    </class>
+    <class static="false" type="relation">
+        <name>MultiplierRel</name>
+        <description>can multiply or divide a number</description>
+        <icon>multiplierrel.png</icon>
+        <graphics>
+            <bounds height="31" width="100" x="0" y="0"/>
+            <text colour="-16777216" fontname="Arial"
+                fontsize="10" fontstyle="0" string="multiplier"
+                transparency="255" x="15" y="18"/>
+             <line colour="-16777216" fixed="false" linetype="0.0"
+            stroke="5" transparency="255" x1="0" x2="100" y1="0" y2="0"/>
+        </graphics>
+        <ports>
+            <port multi="false" name="in" portConnection=""
+                strict="false" type="double" x="4" y="11">
+                <open>
+                    <graphics>
+                        <bounds height="8" width="8" x="-4" y="-4"/>
+                    </graphics>
+                </open>
+                <closed>
+                    <graphics>
+                        <bounds height="8" width="8" x="-4" y="-4"/>
+                    </graphics>
+                </closed>
+            </port>
+            <port multi="false" name="out" portConnection=""
+                strict="false" type="double" x="100" y="10">
+                <open>
+                    <graphics>
+                        <bounds height="8" width="8" x="-4" y="-4"/>
+                    </graphics>
+                </open>
+                <closed>
+                    <graphics>
+                        <bounds height="8" width="8" x="-4" y="-4"/>
+                    </graphics>
+                </closed>
+            </port>
+        </ports>
+        <fields>
+            <field name="multiplier" type="double">
+                <known>
+                    <graphics>
+                        <text colour="-16777216" fontname="Arial"
+                        fontsize="10" fontstyle="0" string=" = "
+                        transparency="255" x="55" y="18"/>                    
+                        <text colour="-16777216" fontname="Arial"
+                        fontsize="10" fontstyle="0" string="*self"
+                        transparency="255" x="65" y="18"/>
+                    </graphics>
+                </known>
+            </field>
+        </fields>
+    </class>
+</package>
+
